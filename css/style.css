@@ -29,7 +29,7 @@ h2 {
 
 .main-navigation {
     min-height: 70px;
-    width: 780px;
+    width: 640px;
     float: left;
     outline: 2px solid #ccc;
 }
@@ -99,6 +99,7 @@ h2 {
 .main-footer {
     margin-top: 65px;
     padding-top: 60px;
+    outline: 2px solid #ccc;
 }
 
 .footer-contacts {
@@ -125,3 +126,80 @@ h2 {
 }
 
 /*catalog*/
+
+.header-logo {
+    width: 111px;
+    height: 24px;
+    float: left;
+    margin-right: 20px;
+    outline: 2px solid #ccc;
+}
+
+.page-title {
+    margin-bottom: 25px;
+}
+
+.breadcrumbs {
+    margin-bottom: 55px;
+}
+
+.filters {
+    width: 220px;
+    float: left;
+    outline: 2px solid #ccc;
+}
+
+.filter-title {
+    margin-bottom: 35px;
+}
+
+fieldset {
+    margin-bottom: 55px;
+}
+
+.btn-show {
+    margin-bottom: 25px;
+}
+
+.item-list {
+    width: 700px;
+    float: right;
+    outline: 2px solid #ccc;
+    font-size: 0px;
+}
+
+.item {
+    display: inline-block;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: 2px solid #ccc;
+    
+}
+
+.item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.item .item-type{
+    text-transform: none;
+}
+
+.paginator {
+    min-width: 195px;
+    height: 43px;
+    font-size: 14px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    outline: 2px solid #ccc;
+
+}
+
+.btn-page {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-right: 7px;
+    outline: 2px solid #ccc;
+}
