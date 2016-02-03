@@ -4,7 +4,9 @@ body {
     line-height: 24px;
     font-weight: bold;
     text-transform: uppercase;
-}
+    background: url("img/index-background.jpg") no-repeat 50% 50%;
+    background-size: 2560px 1762px; 
+}   
 
 h1 {
     font-size: 30px;
@@ -13,3 +15,113 @@ h1 {
 h2 {
     font-size: 24px;
 }
+
+.main-header {
+    margin-bottom: 55px;
+}
+
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    outline: 2px solid #ccc;
+}
+
+.main-navigation {
+    min-height: 70px;
+    width: 780px;
+    float: left;
+    outline: 2px solid #ccc;
+}
+
+.user-block {
+    min-height: 70px;
+    width: 140px;
+    float: right;
+    outline: 2px solid #ccc;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+    outline: 2px solid #ccc;
+}
+
+/*index*/
+
+.img-logo {
+    width: 368px;
+    height: 204px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    outline: 2px solid #ccc;
+}
+
+.features {
+    margin-bottom: 80px;
+    outline: 2px solid #ccc;
+}
+
+.features-item {
+    min-height: 175px;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    outline: 2px solid #ccc;
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.content-block {
+    padding: 50px 80px;
+    margin-bottom: 35px;
+    outline: 2px solid #ccc;
+}
+
+.content-block-left {
+    width: 320px;
+    float: left;
+    min-height: 330px;
+    outline: 2px solid #ccc;
+}
+
+.content-block-right {
+    width: 300px;
+    float: right;
+    min-height: 330px;
+    outline: 2px solid #ccc;
+}
+
+.main-footer {
+    margin-top: 65px;
+    padding-top: 60px;
+}
+
+.footer-contacts {
+    min-height: 190px;
+    width: 320px;
+    float: left;
+    margin-right: 60px;
+    outline: 2px solid #ccc;
+}
+
+.footer-social {
+    min-height: 190px;
+    width: 180px;
+    float: left;
+    margin: 0 auto;
+    outline: 2px solid #ccc;
+}
+
+.footer-copyright {
+    min-height: 190px;
+    width: 140px;
+    float: right;
+    outline: 2px solid #ccc;
+}
+
+/*catalog*/
