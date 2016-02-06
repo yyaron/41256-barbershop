@@ -45,10 +45,13 @@ h2 {
     content: '';
     display: table;
     clear: both;
-    outline: 2px solid #ccc;
 }
 
+/*/////*/
 /*index*/
+/*/////*/
+
+/*grid*/
 
 .img-logo {
     width: 368px;
@@ -96,6 +99,11 @@ h2 {
     outline: 2px solid #ccc;
 }
 
+.gallery figure {
+    margin: 0;
+    margin-bottom: 45px;
+}
+
 .main-footer {
     margin-top: 65px;
     padding-top: 60px;
@@ -103,7 +111,7 @@ h2 {
 }
 
 .footer-contacts {
-    min-height: 190px;
+    min-height: 130px;
     width: 320px;
     float: left;
     margin-right: 60px;
@@ -111,7 +119,7 @@ h2 {
 }
 
 .footer-social {
-    min-height: 190px;
+    min-height: 130px;
     width: 180px;
     float: left;
     margin: 0 auto;
@@ -119,13 +127,18 @@ h2 {
 }
 
 .footer-copyright {
-    min-height: 190px;
+    min-height: 130px;
     width: 140px;
     float: right;
     outline: 2px solid #ccc;
 }
 
+
+/*///////*/
 /*catalog*/
+/*///////*/
+
+/*grid*/
 
 .header-logo {
     width: 111px;
@@ -136,11 +149,15 @@ h2 {
 }
 
 .page-title {
+    min-height: 35px;
     margin-bottom: 25px;
+    outline: 2px solid #ccc;
 }
 
 .breadcrumbs {
+    height: 20px;
     margin-bottom: 55px;
+    outline: 2px solid #ccc;
 }
 
 .filters {
@@ -171,6 +188,7 @@ fieldset {
 .item {
     display: inline-block;
     width: 220px;
+    min-height: 285px;
     margin-right: 20px;
     margin-bottom: 20px;
     font-size: 14px;
@@ -193,7 +211,6 @@ fieldset {
     margin-top: 45px;
     margin-bottom: 50px;
     outline: 2px solid #ccc;
-
 }
 
 .btn-page {
@@ -202,4 +219,153 @@ fieldset {
     height: 43px;
     margin-right: 7px;
     outline: 2px solid #ccc;
+}
+
+
+/*////*/
+/*item*/
+/*////*/
+
+/*grid*/
+
+.item-images {
+    float: left;
+    width: 460px;
+    min-height: 670px;
+    outline: 2px solid #ccc;
+}
+
+.main-image {
+    width: 460;
+    height: 500;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.item-thumbnails {
+    width: 460px;
+    min-height: 150px;
+    font-size: 0px;
+    outline: 2px solid #ccc;
+}
+
+.thumbnail {
+    display: inline-block;
+    margin: 0;
+    margin-right: 20px;
+    outline: 2px solid #ccc;
+}
+
+.thumbnail:last-child {
+    margin-right: 0px;
+}
+
+.item-info {
+    float: right;
+    width: 390px;
+    padding-top: 25px;
+
+    outline: 2px solid #ccc;
+}
+
+.status {
+    margin-bottom: 45px;
+    outline: 2px solid #ccc;
+}
+
+.availability {
+    float: left;
+}
+
+.item-number {
+    float: right;
+}
+
+.item-info p {
+    margin-bottom: 40px;
+    outline: 2px solid #ccc;
+}
+
+.price-block {
+    height: 43px;
+    width: 185px;
+    margin-bottom: 65px;
+    outline: 2px solid #ccc;
+}
+
+.kit-info {
+    margin-bottom: 40px;
+    outline: 2px solid #ccc;
+}
+
+
+/*//////////*/
+/*price-list*/
+/*//////////*/
+
+/*grid*/
+
+.page-title span {
+    display: block;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 70px;
+    width: auto;
+    outline: 2px solid #ccc;
+}
+
+.block-title {
+    margin-bottom: 40px;
+    width: 240px;
+    text-align: left;
+    outline: 2px solid #ccc;
+}
+
+.price-list-right p,
+.price-list-left p {
+    width: 380px;
+    outline: 2px solid #ccc;
+}
+
+.price-list-left {
+    float: left;
+    width: 380px;
+    outline: 2px solid #ccc;
+}
+
+.price-list-left ul {
+    margin-bottom: 65px;
+    outline: 2px solid #ccc;
+}
+
+.price-list-right {
+    float: right;
+    width: 460px;
+    outline: 2px solid #ccc;
+}
+
+.price-list-right table {
+    width: 460px;
+    caption-side: left;
+    margin-bottom: 125px;
+}
+
+/*decoration*/
+
+.page-title span::before,
+.page-title span::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    height: 3px;
+    background-color: #000;
+}
+
+.page-title span::before {
+    margin-right: 20px;
+}
+
+.page-title span::after {
+    margin-left: 20px;
 }
