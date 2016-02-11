@@ -3,28 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Средства для ухода</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+        <link rel="stylesheet" href="css/normalize.css">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="inner-page">
         <header class="main-header">
             <div class="container clearfix">
-                <img class="header-logo" src="#" width="111" height="24" alt="Barbershop">
                 <nav class="main-navigation">
+                    <a class="header-logo" href="index.html"><img src="img/header-logo.png" width="111" height="24" alt="Barbershop"></a>
                     <ul>
                         <li>
                             <a href="#">Информация</a>
                         </li>
                         <li>
-                            <a href="#">Новости</a>
+                            <a href="index.html#news">Новости</a>
                         </li>
                         <li>
-                            <a href="#">Прайс-лист</a>
+                            <a href="price-list.html">Прайс-лист</a>
+                        </li>
+                        <li class="active">
+                            <span>Магазин</span>
                         </li>
                         <li>
-                            <a class="active" href="#">Магазин</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
+                            <a href="index.html#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -34,16 +36,20 @@
             </div>
         </header>
         <main class="container clearfix">
-            <h1 class="page-title">Средства для ухода</h1>
-            <div class="breadcrumbs">
-                <a href="#">Главная</a>
-                <a href="#">Магазин</a>
-                <a class="active" href="#">Средства для ухода</a>
-            </div>
+            <h1>Средства для ухода</h1>
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Магазин</a>
+                </li>
+                <li class="current">Средства для ухода</li>
+            </ul>
             <aside class="filters">
                 <fieldset class="brands">
-                    <legend class="filter-title">Производители</legend> <!-- Добавить стили для legend вместо h1 -->
-                    <form class="filter-item" action="https://echo.htmlacademy.ru" method="post">
+                    <legend>Производители</legend> 
+                    <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
                     <ul>
                         <li>
                             <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
@@ -73,88 +79,114 @@
                     </form>
                 </fieldset>
                 <fieldset class="item-groups">
-                    <legend class="filter-title">Группы товаров</legend> <!-- Добавить стили для legend вместо h1 -->
+                    <legend>Группы товаров</legend> 
                 </fieldset>
                 <button class="btn btn-show" type="button">Показать</button>
             </aside>
             <div class="item-list">
                 <article class="item">
-                    <img src="http://placehold.it/220x165" width="220" height="165" alt=""> <br>
                     <a href="#">
-                        <span class="item-type">Набор для путешествий</span> <br>
-                        <span class="item-title">«Baxter of California»<span>
+                        <img src="img/shop-item-1.jpg" width="220" height="165" alt="">
+                    </a>
+                    <a href="#">
+                        <div class="item-name-block">
+                            <span class="item-type">Набор для путешествий</span> <br>
+                            <span class="item-title">«Baxter of California»</span>
+                        </div>
                     </a> 
-                    <!-- End tag a violates nesting rules. -->
-                    <div class="price-block">
+                    <div class="item-price-block clearfix">
                         <span class="price">2 900 руб.</span>
                         <a class="btn btn-buy" href="#">Купить</a>	
                     </div>
                 </article>
                 <article class="item">
-                    <img src="http://placehold.it/220x165" width="220" height="165" alt=""> <br>
                     <a href="#">
-                        <span class="item-type">Увлажняющий кондиционер</span> <br>
-                        <span class="item-title">«Baxter of California»<span>
+                        <img src="img/shop-item-2.jpg" width="220" height="165" alt="">
+                    </a>
+                    <a href="#">
+                        <div class="item-name-block">
+                            <span class="item-type">Увлажняющий кондиционер</span> <br>
+                            <span class="item-title">«Baxter of California»</span>
+                        </div>
                     </a> 
-                    <!-- End tag a violates nesting rules. -->
-                    <div class="price-block">
+                    <div class="item-price-block clearfix">
                         <span class="price">750 руб.</span>
                         <a class="btn btn-buy" href="#">Купить</a>	
                     </div>
                 </article>
                 <article class="item">
-                    <img src="http://placehold.it/220x165" width="220" height="165" alt=""> <br>
                     <a href="#">
-                        <span class="item-type">Гель для волос</span> <br>
-                        <span class="item-title">«Suavecito»<span>
+                        <img src="img/shop-item-3.jpg" width="220" height="165" alt="">
                     </a>
-                    <!-- End tag a violates nesting rules. -->
-                    <div class="price-block">
+                    <a href="#">
+                        <div class="item-name-block">
+                            <span class="item-type">Гель для волос</span> <br>
+                            <span class="item-title">«Suavecito»</span>
+                        </div>
+                    </a>
+                    <div class="item-price-block clearfix">
                         <span class="price">290 руб.</span>
                         <a class="btn btn-buy" href="#">Купить</a>	
                     </div>
                 </article>
                 <article class="item">
-                    <img src="http://placehold.it/220x165" width="220" height="165" alt=""> <br>
                     <a href="#">
-                        <span class="item-type">Гель для укладки волос</span> <br>
-                        <span class="item-title">«American Crew»<span>
+                        <img src="img/shop-item-4.jpg" width="220" height="165" alt="">
                     </a>
-                    <!-- End tag a violates nesting rules. -->
-                    <div class="price-block">
+                    <a href="#">
+                        <div class="item-name-block">
+                            <span class="item-type">Гель для укладки волос</span> <br>
+                            <span class="item-title">«American Crew»</span>
+                        </div>
+                    </a>
+                    <div class="item-price-block clearfix">
                         <span class="price">500 руб.</span>
                         <a class="btn btn-buy" href="#">Купить</a>	
                     </div>
                 </article>
                 <article class="item">
-                    <img src="http://placehold.it/220x165" width="220" height="165" alt=""> <br>
                     <a href="#">
-                        <span class="item-type">Гель для волос</span> <br>
-                        <span class="item-title">«American Crew»<span>
+                        <img src="img/shop-item-5.jpg" width="220" height="165" alt="">
                     </a>
-                    <!-- End tag a violates nesting rules. -->
-                    <div class="price-block">
+                    <a href="#">
+                        <div class="item-name-block">
+                            <span class="item-type">Гель для волос</span> <br>
+                            <span class="item-title">«American Crew»</span>
+                        </div>
+                    </a>
+                    <div class="item-price-block clearfix">
                         <span class="price">300 руб.</span>
                         <a class="btn btn-buy" href="#">Купить</a>	
                     </div>
                 </article>
                 <article class="item">
-                    <img src="http://placehold.it/220x165" width="220" height="165" alt=""> <br>
                     <a href="#">
-                        <span class="item-type">Набор для бритья</span> <br>
-                        <span class="item-title">«Baxter of California»<span>
+                        <img src="img/shop-item-6.jpg" width="220" height="165" alt="">
                     </a>
-                    <!-- End tag a violates nesting rules. -->
-                    <div class="price-block">
+                    <a href="#">
+                        <div class="item-name-block">
+                            <span class="item-type">Набор для бритья</span> <br>
+                            <span class="item-title">«Baxter of California»</span>
+                        </div>
+                    </a>
+                    <div class="item-price-block clearfix">
                         <span class="price">3 900 руб.</span>
                         <a class="btn btn-buy" href="#">Купить</a>	
                     </div>
                 </article>
-                <div class="paginator">
-                    <a class="btn btn-page" href="#">1</a>
-                    <a class="btn btn-page active" href="#">2</a>
-                    <a class="btn btn-page" href="#">3</a>
-                    <a class="btn btn-page" href="#">4</a>
+                <ul class="paginator">
+                    <li>
+                        <a class="btn btn-page" href="#">1</a>
+                    </li>
+                    <li>
+                        <span class="btn btn-page current-page" href="#">2</span>
+                    </li>
+                    <li>
+                        <a class="btn btn-page" href="#">3</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-page" href="#">4</a>
+                    </li>
                 </div>
             </div>
         </main>
