@@ -31,7 +31,7 @@ body {
 
 .main-header {
     height: 70px;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
     background: #000;
     color: #fff;
 }
@@ -237,6 +237,13 @@ body {
 }
 
 
+/*commom styles - images*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*common styles - footer*/
 
 .main-footer {
@@ -336,6 +343,10 @@ body {
 
 
 /*inner page styles*/
+
+.inner-page .main-header {
+    margin-bottom: 60px;
+} 
 
 .main-navigation .header-logo {
     float: left;
