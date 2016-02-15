@@ -3,28 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Набор для путешествий «Baxter of California»</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+        <link rel="stylesheet" href="css/normalize.css">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="inner-page">
         <header class="main-header">
             <div class="container clearfix">
-                <img class="header-logo" src="#" width="111" height="24" alt="Barbershop">
                 <nav class="main-navigation">
+                    <a class="header-logo" href="index.html"><img src="img/header-logo.png" width="111" height="24" alt="Barbershop"></a>
                     <ul>
                         <li>
                             <a href="#">Информация</a>
                         </li>
                         <li>
-                            <a href="#">Новости</a>
+                            <a href="index.html#news">Новости</a>
                         </li>
                         <li>
-                            <a href="#">Прайс-лист</a>
+                            <a href="price-list.html">Прайс-лист</a>
+                        </li>
+                        <li class="active">
+                            <span>Магазин</span>
                         </li>
                         <li>
-                            <a class="active" href="#">Магазин</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
+                            <a href="index.html#contacts">Контакты</a>
                         </li>                        
                     </ul>
                 </nav>
@@ -34,27 +36,33 @@
             </div>
         </header>
         <main class="container clearfix">
-            <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
-            <div class="breadcrumbs">
-                <a href="#">Главная</a>
-                <a href="#">Магазин</a>
-                <a href="#">Средства для ухода</a>
-                <a class="active" href="#">Набор для путешествий «Baxter of California»</a>
-            </div>
+            <h1>Набор для путешествий «Baxter of California»</h1>
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Магазин</a>
+                </li>
+                <li>
+                    <a href="#">Средства для ухода</a>
+                </li>
+                <li class="current">Набор для путешествий «Baxter of California»</li>
+            </ul>
             <div class="item-block">
                 <div class="item-images">
                     <figure class="main-image">
-                        <img src="http://placehold.it/460x500" alt="" width="460" height="500">
+                        <img src="img/item-main.jpg" alt="" width="460" height="498">
                     </figure>
                     <div class="item-thumbnails">
                         <figure class="thumbnail">
-                            <img src="http://placehold.it/140x150" alt="">
+                            <img src="img/item-thumbnail-1.jpg" width="140" height="149" alt="">
                         </figure>
                         <figure class="thumbnail">
-                            <img src="http://placehold.it/140x150" alt="">
+                            <img src="img/item-thumbnail-2.jpg" width="140" height="149" alt="">
                         </figure>
                         <figure class="thumbnail">
-                            <img src="http://placehold.it/140x150" alt="">
+                            <img src="img/item-thumbnail-3.jpg" width="140" height="149" alt="">
                         </figure>
                    </div>
                 </div>
@@ -63,19 +71,19 @@
                         <span class="availability in-stock">
                             Есть в наличии
                         </span>
-                        <span class="item-number">
+                        <span class="item-id">
                             Артикул: Dexter-AE
                         </span>
                     </div>
                     <p>
                         Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
                     </p>
-                    <div class="price-block">
+                    <div class="item-price-block clearfix">
                         <span class="price">2 900 руб.</span>
                         <a class="btn btn-buy" href="#">Купить</a>  
                     </div>
-                    <h2 class="kit-info">В набор входят:</h2>
-                        <ul>
+                    <h2>В набор входят:</h2>
+                        <ul class="compact-list">
                             <li>Средство для умывания (50 мл)</li>
                             <li>Увлажняющий крем (50 мл)</li>
                             <li>Крем для бритья (50 мл)</li>

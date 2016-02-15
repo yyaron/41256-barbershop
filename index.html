@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Барбершоп «Бородинский»</title>
-        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -14,16 +16,16 @@
                             <a href="#">Информация</a>
                         </li>
                         <li>
-                            <a href="#">Новости</a>
+                            <a href="#news">Новости</a>
                         </li>
                         <li>
-                            <a href="#">Прайс-лист</a>
+                            <a href="price-list.html">Прайс-лист</a>
                         </li>
                         <li>
-                            <a href="#">Магазин</a>
+                            <a href="catalog.html">Магазин</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -34,7 +36,7 @@
         </header>
         <main class="container">
             <div class="img-logo">
-                <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
+                <img src="img/borodinski-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
             </div>
             <section class="features clearfix">
                 <div class="features-item">
@@ -51,7 +53,7 @@
                 </div>
             </section>
             <div class="content-block clearfix">
-                <div class="content-block-left">
+                <div class="content-block-left" id="news">
                     <h1 class="content-block-title">Новости</h1>
                     <ul class="news-preview">
                         <li>
@@ -69,14 +71,14 @@
                     <h1 class="content-block-title">Фотогалерея</h1>
                     <div class="gallery">
                         <figure>
-                            <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+                            <a href="#"><img src="img/gallery-photo.jpg" width="286" height="164" alt=""></a>
                         </figure>
                         <button class="btn gallery-prev" type="button" disabled>Назад</button>
                         <button class="btn gallery-next" type="button" >Вперед</button>
                     </div>
                 </div>
             </div>
-            <div class="content-block clearfix">
+            <div class="content-block clearfix" id="contacts">
                 <div class="content-block-left">
                     <h1 class="content-block-title">Контактная информация</h1>
                     <p>
