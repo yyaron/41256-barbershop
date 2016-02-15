@@ -944,7 +944,8 @@ article .item-price-block {
     z-index: 10;
 }
 
-.modal-login-close {
+.modal-login-close,
+.modal-map-close {
     position: absolute;
     top: 0;
     right: -34px;
@@ -959,7 +960,9 @@ article .item-price-block {
 }
 
 .modal-login-close::before,
-.modal-login-close::after {
+.modal-login-close::after,
+.modal-map-close::before,
+.modal-map-close::after {
     content: '';
     display: block;
     position: absolute;
@@ -972,11 +975,13 @@ article .item-price-block {
     z-index: 20;
 }
 
-.modal-login-close::before {
+.modal-login-close::before,
+.modal-map-close::before {
     transform: rotate(45deg);
 }
 
-.modal-login-close::after {
+.modal-login-close::after,
+.modal-map-close::after {
     transform: rotate(-45deg);
 }
 
@@ -1117,11 +1122,53 @@ article .item-price-block {
     z-index: 5;
 }
 
+
+/*/////////*/
+/*amination*/
+/*/////////*/
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(-10px);
+    }
+}
+
+
 /*//////////*/
-/*modal - js*/
+/*javascript*/
 /*//////////*/
 
 .modal-content-show {
     display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-overlay-show {
+    display: block;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
