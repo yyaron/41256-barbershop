@@ -920,10 +920,255 @@ article .item-price-block {
 }
 
 
+/*//////*/
+/*modal*/
+/*//////*/
+
+/*modal login*/
+
+.modal-login {
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    width: 300px;
+    min-height: 285px;
+    padding: 50px 80px;
+    padding-bottom: 60px;
+    margin-left: -230px;
+
+    color: #000;
+
+    background: #f9f6f3 url("../img/content-texture.png") center;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.modal-login-close,
+.modal-map-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.modal-login-close::before,
+.modal-login-close::after,
+.modal-map-close::before,
+.modal-map-close::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 9px;
+    width: 4px;
+    height: 20px;
+    background-color: #d1d1d1;
+    border-radius: 1px;
+    z-index: 20;
+}
+
+.modal-login-close::before,
+.modal-map-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-login-close::after,
+.modal-map-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-login h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.modal-login p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-login input[type="text"],
+.modal-login input[type="password"] {
+    width: 236px;
+    padding: 10px 20px;
+    padding-right: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: #f9f6f3;
+    border: 2px solid #000;
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.modal-login input:focus {
+    border-color: #663d15;
+}
+
+.modal-login input[type="text"] {
+    background: #f9f6f3 url("../img/icon-popup-login.png") no-repeat 95% 50%; 
+}
+
+.modal-login input[type="password"] {
+    margin-bottom: 20px;
+    background: #f9f6f3 url("../img/icon-popup-pass.png") no-repeat 95% 50%; 
+}
+
+.modal-login .btn-login {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.modal-login input[type="checkbox"] {
+    display: none;
+} 
+
+.modal-login input[type="checkbox"]:checked + .checkbox-indicator {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background: url("../img/checkbox.png") no-repeat center;
+    z-index: 15;
+}
+
+.modal-login label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.modal-login label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+.modal-login .pass-recovery {
+    float: right;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.modal-login .pass-recovery:hover,
+.modal-login .pass-recovery:active,
+.modal-login label:hover,
+.modal-login label:active {
+    color: #663d15;
+}
+
+.login-form::before body{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+} 
 
 
+/*modal map*/
+
+.modal-map {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -280px;
+    margin-left: -383px;
+
+    width: 767px;
+    height: 561px;
+
+    background: #aba9a7 url("../img/modal-map.jpg") no-repeat center;
+    border: 7px solid #fff;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
 
 
+/*modal overlay*/
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
 
 
+/*/////////*/
+/*amination*/
+/*/////////*/
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(-10px);
+    }
+}
+
+
+/*//////////*/
+/*javascript*/
+/*//////////*/
+
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-overlay-show {
+    display: block;
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
 
